@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zemoga test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/test.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+  
+
+    <section class="page-section cta" style="background-image: url('img/Pope.jpg')">
+      <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="pasttrials.html" >Past Trials
+                </a>
+              </li>
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="howitworks.html">How it works</a>
+              </li>
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="login.html">Login / Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container" style="padding-bottom: 5%">
+        <div class="intro">
+          <div class="intro-text">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">What's your opinion on</span>
+                <span class="section-heading-lower"><strong>Pope Francis</strong></span>
+              </h2>
+              <p class="mb-0">He's talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)</p>
+              <p class="mb-0"><strong>What's your veredict?</strong></p>
+            </div>
+            
+            <div style="width:100%; display: inline-flex">
+              <div style="width:50%; text-align: center; padding: 2%; background: rgba(0,255,255,0.3);">
+                <a>
+                  <img src="img/Thumbsup.png" style="width: 20%">
+                </a>
+              </div>
+              <div style="width:50%; text-align: center;padding: 2%; background: rgba(255,255,0,0.3);">
+                <a >
+                  <img src="img/Thumbsdown.png" style="width: 20%">
+                </a>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%; display: inline-flex ">
+        <div style="width:33% ;background: rgba(0,0,0,0.09)" id="#closing" class="corner">
+          <span>Closing in</span>
+        </div>
+        <div style="width:66%; padding-left: 1%">
+          <span><strong>22</strong> days</span>
+        </div>
+      </div>    
+    
+    </section>
+
+    <section class="floating-box-placed">
+      <div class="floating-box">
+        <div class="left-text-box">
+          <div>
+            <h3>Speak out. Be Heard</h3>
+          </div>
+          <div>
+            <h2>
+              <strong> Be counted</strong>
+            </h2>
+          </div>
+        </div>
+        <div class="middle-left-text">
+          <label>
+            Rule of Thumb is a crowd soured court of public opinion where anyone and everyone can speak out and speak freely. It's easy: You share your opinion, we analyze and put the data in a public report
+          </label>
+        </div>
+        <div class="middle-left-text close-box">
+          <img src="img/close.png" style="width: 50%">
+        </div>
+      </div>
+    </section>
+
+    <section style="margin: 5%">
+      <div style="padding-top: : 5%">
+        <h3>
+          Votes
+        </h3>
+      </div>
+
+      <div class="rowVote">
+        <div class="columnVote" >
+          <div class="intro artistBox imgKanye"  id="Kanye">
+            <div class="cta-inner text-center rounded" >
+              <div class="artistInfo">
+                <div class="artist-left">
+                  <div class="imgArtist-container">
+                    <img src="img/Thumbsup.png" class="fullSize minsize-img" id="KanyeResult">
+                  </div>
+                  <div class="spaced-text">
+                    <h1 class="text-white">
+                      Kanye West
+                    </h1>
+                    <span class="text-white font-small">
+                      <strong>One month ago </strong>  in Entretaiment
+                    </span>
+                    <h5 class="text-white top-margin KanyeText">
+                      Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero
+                    </h5>
+                    <div class="voteBox">
+                      <div class="voteNow" id="KanyeVoteSection">
+                        <div class="thumbsUp up-color">
+                          <a onclick="selectVote(this, 'Kanye', 'up')">
+                            <img src="img/Thumbsup.png" class="fullSize">
+                          </a>
+                        </div>
+                        <div class="thumbsDown down-color">
+                          <a onclick="selectVote(this, 'Kanye', 'down')">
+                            <img src="img/Thumbsdown.png"  class="fullSize">
+                          </a>
+                        </div>
+                        <div class="voteNowBox">
+                          <label hidden id="KanyeVote"></label>
+                          <a role="button" class="decideBox" onclick="voteNow(0)">
+                            Vote now
+                          </a>
+                        </div>
+                      </div>
+                      <div class="voteAgain" id="KanyeAgain">
+                        <div class="voteNowBox">
+                          <a role="button" class="decideBox" onclick="voteAgain(0, this)">
+                            Vote again
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="resultBox">
+              <div class="VoteUp upResultBar">
+                <img src="img/Thumbsup.png" style="width: 30px">
+                <label class="ThumbsUpPercentage text-white">50%</label>
+              </div>
+              <div class="VoteDown downResultBar">
+                <label class="ThumbsDownPercentage text-white">50%</label>
+                <img src="img/Thumbsdown.png" style="width: 30px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columnVote" >
+          <div class="intro artistBox imgMark"  id="Mark">
+            <div class="cta-inner text-center rounded" >
+              <div class="artistInfo">
+                <div class="artist-left">
+                  <div class="imgArtist-container">
+                    <img src="img/Thumbsup.png" class="fullSize minsize-img" id="MarkResult">
+                  </div>
+                  <div class="spaced-text">
+                    <h1 class="text-white">
+                      Mark Zuckerberg
+                    </h1>
+                    <span class="text-white font-small">
+                      <strong>One month ago </strong>  in Business
+                    </span>
+                    <h5 class="text-white top-margin">
+                      Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero
+                    </h5>
+                    <div class="voteBox">
+                      <div class="voteNow" id="MarkVoteSection">
+                        <div class="thumbsUp up-color">
+                          <a onclick="selectVote(this, 'Mark', 'up')">
+                            <img src="img/Thumbsup.png" class="fullSize">
+                          </a>
+                        </div>
+                        <div class="thumbsDown down-color">
+                          <a onclick="selectVote(this, 'Mark', 'down')">
+                            <img src="img/Thumbsdown.png"  class="fullSize">
+                          </a>
+                        </div>
+                        <div class="voteNowBox">
+                          <label hidden id="MarkVote"></label>
+                          <a role="button" class="decideBox" onclick="voteNow(1)">
+                            Vote now
+                          </a>
+                        </div>
+                      </div>
+                      <div class="voteAgain" id="MarkAgain">
+                        <div class="voteNowBox">
+                          <a role="button" class="decideBox" onclick="voteAgain(1, this)">
+                            Vote again
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="resultBox">
+              <div class="VoteUp upResultBar">
+                <img src="img/Thumbsup.png" style="width: 30px">
+                <label class="ThumbsUpPercentage text-white">50%</label>
+              </div>
+              <div class="VoteDown downResultBar">
+                <label class="ThumbsDownPercentage text-white">50%</label>
+                <img src="img/Thumbsdown.png" style="width: 30px">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+       <div class="rowVote">
+        <div class="columnVote" >
+          <div class="intro artistBox imgCristina"  id="Cristina">
+            <div class="cta-inner text-center rounded" >
+              <div class="artistInfo">
+                <div class="artist-left">
+                  <div class="imgArtist-container">
+                    <img src="img/Thumbsup.png" class="fullSize minsize-img" id="CristinaResult">
+                  </div>
+                  <div class="spaced-text">
+                    <h1 class="text-white">
+                      Cristina Fernandez de Kirchner
+                    </h1>
+                    <span class="text-white font-small">
+                      <strong>One month ago </strong>  in Politics
+                    </span>
+                    <h5 class="text-white top-margin CristinaText">
+                      Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero
+                    </h5>
+                    <div class="voteBox">
+                      <div class="voteNow" id="CristinaVoteSection">
+                        <div class="thumbsUp up-color">
+                          <a onclick="selectVote(this, 'Cristina', 'up')">
+                            <img src="img/Thumbsup.png" class="fullSize">
+                          </a>
+                        </div>
+                        <div class="thumbsDown down-color">
+                          <a onclick="selectVote(this, 'Cristina', 'down')">
+                            <img src="img/Thumbsdown.png"  class="fullSize">
+                          </a>
+                        </div>
+                        <div class="voteNowBox">
+                          <label hidden id="CristinaVote"></label>
+                          <a role="button" class="decideBox" onclick="voteNow(2)">
+                            Vote now
+                          </a>
+                        </div>
+                      </div>
+                      <div class="voteAgain" id="CristinaAgain">
+                        <div class="voteNowBox">
+                          <a role="button" class="decideBox" onclick="voteAgain(2, this)">
+                            Vote again
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="resultBox">
+              <div class="VoteUp upResultBar">
+                <img src="img/Thumbsup.png" style="width: 30px">
+                <label class="ThumbsUpPercentage text-white">50%</label>
+              </div>
+              <div class="VoteDown downResultBar">
+                <label class="ThumbsDownPercentage text-white">50%</label>
+                <img src="img/Thumbsdown.png" style="width: 30px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columnVote" >
+          <div class="intro artistBox imgMalala"  id="Malala">
+            <div class="cta-inner text-center rounded" >
+              <div class="artistInfo">
+                <div class="artist-left">
+                  <div class="imgArtist-container">
+                    <img src="img/Thumbsup.png" class="fullSize minsize-img" id="MalalaResult">
+                  </div>
+                  <div class="spaced-text">
+                    <h1 class="text-white">
+                      Malala Yousafzai
+                    </h1>
+                    <span class="text-white font-small">
+                      <strong>One month ago </strong>  in Entretaiment
+                    </span>
+                    <h5 class="text-white top-margin">
+                      Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero
+                    </h5>
+                    <div class="voteBox">
+                      <div class="voteNow" id="MalalaVoteSection">
+                        <div class="thumbsUp up-color">
+                          <a onclick="selectVote(this, 'Malala', 'up')">
+                            <img src="img/Thumbsup.png" class="fullSize">
+                          </a>
+                        </div>
+                        <div class="thumbsDown down-color">
+                          <a onclick="selectVote(this, 'Malala', 'down')">
+                            <img src="img/Thumbsdown.png"  class="fullSize">
+                          </a>
+                        </div>
+                        <div class="voteNowBox">
+                          <label hidden id="MalalaVote"></label>
+                          <a role="button" class="decideBox" onclick="voteNow(3)">
+                            Vote now
+                          </a>
+                        </div>
+                      </div>
+                      <div class="voteAgain" id="MalalaAgain">
+                        <div class="voteNowBox">
+                          <a role="button" class="decideBox" onclick="voteAgain(3, this)">
+                            Vote again
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="resultBox">
+              <div class="VoteUp upResultBar">
+                <img src="img/Thumbsup.png" style="width: 30px">
+                <label class="ThumbsUpPercentage text-white">50%</label>
+              </div>
+              <div class="VoteDown downResultBar">
+                <label class="ThumbsDownPercentage text-white">50%</label>
+                <img src="img/Thumbsdown.png" style="width: 30px">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="floating-box-placed">
+      <div class="floating-box">
+        <div class="anyone-add">
+          <h3>Is there anyone else you would want us to add</h3>
+        </div>
+        <div class="submit-box">
+          <label>
+            Submit a name
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5 floating-box-placed">
+      <div class="footer-box">
+        <ul class="footer-items">
+          <li>Terms and condition</li>
+          <li>Privacy Policy</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="social-box">
+        <ul class="footer-items">
+          <li>Follow us</li>
+          <li><img src="img/facebook.png" class="social-img"></li>
+          <li><img src="img/twitter.png" class="social-img"></li>
+        </ul>
+      </div>
+    </footer>
+
+    
+
+    <script src="js/Votes.js">
+
+    </script>
+
+  </body>
+
+</html>
